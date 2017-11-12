@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>index</title>
+        <link rel="stylesheet" href="css/index.css" type="text/css" />
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" type="text/css" />
+        <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+      
+    </head>
+    <body>
+      <h1>Javascript Calculator</h1>
+      <div id='calculator'>
+        <form>
+          <input type="text" id="display" value='0' disabled>
+          <br>
+          <input type='button' value='C' id='keys' onclick='toscreen("c")'>
+          <input type='button' value='CE' id='keys' onclick='backspace()'>
+          <input type='button' value='X^2' id='keys' onclick='power()'>
+          <input type='button' value='+' id='keys' onclick='toscreen("+")'>
+          <br>
+          <input type='button' value='7' id='keys' onclick='toscreen("7")'>
+          <input type='button' value='8' id='keys' onclick='toscreen("8")'>
+          <input type='button' value='9' id='keys' onclick='toscreen("9")'>
+          <input type='button' value='-' id='keys' onclick='toscreen("-")'>
+          <br>
+          <input type='button' value='4' id='keys' onclick='toscreen("4")'>
+          <input type='button' value='5' id='keys' onclick='toscreen("5")'>
+          <input type='button' value='6' id='keys' onclick='toscreen("6")'>
+          <input type='button' value='*' id='keys' onclick='toscreen("*")'>
+          <br>
+          <input type='button' value='1' id='keys' onclick='toscreen("1")'>
+          <input type='button' value='2' id='keys' onclick='toscreen("2")'>
+          <input type='button' value='3' id='keys' onclick='toscreen("3")'>
+          <input type='button' value='/' id='keys' onclick='toscreen("/")'>
+          <br>
+          <input type='button' value='0' id='keys' onclick='toscreen("0")'>
+          <input type='button' value='.' id='keys' onclick='toscreen(".")'>
+          <input type='button' value='=' id='equal' onclick='answer()'>
+        </form>
+        <h3>JS Calculator</h3>
+      </div>
+      <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
